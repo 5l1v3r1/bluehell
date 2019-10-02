@@ -1,0 +1,54 @@
+[[[ BlueHell 0.2 [[[ public ]]] version ]]]                             
+------------------------------------------------------------------------
+
+Please use this tool only to do authorized tests! Don't abuse it.
+If you find bugs and good ideas about BlueHell please contact me. 
+ 
+
+----------------------------[ Requirements ]---------------------------
+
+BlueHell is written in python. To run it, you have to install:
+	python (of course) http://www.python.org/
+	pygtk	           http://www.pygtk.org/
+	bluez              http://www.bluez.org/
+        pybluez            http://org.csail.mit.edu/pybluez/
+	pyserial           http://pyserial.sourceforge.net/
+	obexftp            http://www.openobex.org/
+	helomoto           http://trifinite.org/trifinite_stuff_helomoto.html   
+			   -it's in the tools directory just recompile it!   
+	blueprint          http://trifinite.org/trifinite_stuff_blueprinting.html  
+                           -it's in the tools directory and is modified to run under BlueHell! 
+
+This tool has been developed and tested on a Opensuse Linux box.
+-------------------------------[ Author ]-------------------------------
+
+Guerrino Di Massa "rugginello" <rugginello@gmail.com>
+http://rugginello.altervista.org
+
+---------------------------[ How to use it ]----------------------------
+It's very easy. Just use scan button to perform a device
+discovery session . Select a bluetooth address in order to do service discovery
+or security attack test. You can find trace of your activity with the reports 
+button and in the status bar.
+
+---------------------------[ Bugs ]-------------------------------------
+22-11-2007
+         I mistakenly left a helomoto binary in the tools directory! You have to recompile it according to your box.
+03-12-2007
+        In the blugbag test i now check the presence of dev/rfcomm0. If it's not present i'll create it.
+11-12-2007 
+	Some dusty code errors and a new function: fingerprint with blueprint utility.
+
+-------------------------------[ Wishlist ]-------------------------------
+- todo:
+- fuzzing - dos
+- multithread scan
+- bluetooth address spoofing
+- multidongle support
+- sniffing?
+- pin cracking
+ 
+-------------------------------[ greetz ]---------------------------------------
+I'd like to say "Thanks" to Davide del Vecchio (dante) and Luca "Ikki" Carettoni.
+They both transfer to me a curiosity and a good point of view about bluetooth
+tecnology.   
